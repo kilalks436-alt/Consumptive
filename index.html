@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumptive | متجر السكربتات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div><strong>Consumptive</strong></div>
+        <div>
+            <button onclick="checkSecurity()">تسجيل الدخول</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>مرحباً بك في متجر Consumptive</h1>
+        <p>يرجى تسجيل الدخول للوصول إلى أقسامنا المتقدمة</p>
+    </div>
+
+    <script>
+        function checkSecurity() {
+            let password = prompt("أدخل مفتاح الأمان (ADMIN_API_KEY):");
+            if (password === "Bin_Al_Walid_Secure_Fortress_2026") {
+                document.body.classList.add('dark-mode');
+                alert("تم التحقق بنجاح! مرحباً بك في لوحة الإدارة.");
+            } else {
+                alert("خطأ: مفتاح الأمان غير صحيح.");
+            }
+        }
+    </script>
+</body>
+</html>
