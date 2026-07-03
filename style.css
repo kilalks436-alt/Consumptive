@@ -1,0 +1,3 @@
+body { background-color: white; transition: background-color 0.8s ease; color: black; }
+.dark-mode { background: linear-gradient(to bottom, #000000, #001f3f); color: white; }
+.navbar { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ccc; }
